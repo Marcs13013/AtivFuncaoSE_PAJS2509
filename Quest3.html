@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow"><center>
+   
+<font size="9">
+<span id="Nome1"> </span> Tem  
+<span id="Ano1"></span> Anos<br>
+<span id="Nome2"> </span> Tem 
+<span id="Ano2"></span> Anos<br><br>
+<span id="resultado"></span>
+
+</font>
+ㅤㅤ
+<br><br><br><br>
+<a href="index.html"> <button><h4>Questão 1 - Números Maiores e Menores</h4></button></a>
+<a href="Quest2.html"> <button><h4>Questão 2 - Nomes e Pesos</h4></button></a>
+<a href="Quest4.html"> <button><h4>Questão 4 - Número Pares e Impares</h4></button></a>
+<a href="Quest5.html"> <button><h4>Questão 5 - Diferença Entre Dois Números</h4></button></a>
+<a href="Quest6.html"> <button><h4>Questão 6 - Prêmio De Funcionário</h4></button></a>
+<br><a href="TesteDeMesa.html"> <button><h4>Teste De Mesa</h4></button></a>
+
+<script>
+
+let Nome1 = prompt("Digite o nome da primeira pessoa");
+let Ano1 = Number(prompt("Digite o ano em que a primeira pessoa nasceu"));
+let Nome2 = prompt("Digite o nome da segunda pessoa");
+let Ano2 = Number(prompt("Digite o ano em que a segunda pessoa nasceu"));
+let resultado = "";
+
+if (Ano1 > Ano2){
+    resultado = Nome2 + " é mais velha que " + Nome1;
+}else if (Ano1<Ano2){
+    resultado = Nome1 + " é mais velha que " + Nome2;
+}else if (Ano1 == Ano2){
+    resultado = "As duas pessoas tem a mesma idade"
+}
+
+document.getElementById("Ano1").innerHTML = 2023 - Ano1;
+document.getElementById("Nome1").innerHTML = Nome1;
+document.getElementById("Ano2").innerHTML = 2023 - Ano2;
+document.getElementById("Nome2").innerHTML = Nome2;
+document.getElementById("resultado").innerHTML = resultado;
+</script>
+    </center>
+</body>
+</html>

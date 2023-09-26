@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow"><center>
+    <font size="9"> <span id="Num1">  </span>
+    --- </font>
+    
+    <font size="9"> <span id="Num2"></span></font> <br>
+<font size="9"> <span id="resultado"></span></font>
+<br><br><br><br>
+<a href="Quest2.html"> <button><h4>Questão 2 - Nomes e Pesos</h4></button></a>
+<a href="Quest3.html"> <button><h4>Questão 3 - Anos de Nascimento</h4></button></a>
+<a href="Quest4.html"> <button><h4>Questão 4 - Número Pares e Impares</h4></button></a>
+<a href="Quest5.html"> <button><h4>Questão 5 - Diferença Entre Dois Números</h4></button></a>
+<a href="Quest6.html"> <button><h4>Questão 6 - Prêmio De Funcionário</h4></button></a>
+<br><a href="TesteDeMesa.html"> <button><h4>Teste De Mesa</h4></button></a>
+<script>
+
+
+let Num1 = Number(prompt("Digite o primeiro número"))
+let Num2 = Number(prompt("Digite o segundo número"))
+let resultado = ""
+
+if (Num1 > Num2){
+    resultado = "O primeiro número é maior" + "</br>" + "O segundo número é menor";
+}else if (Num1 < Num2){
+    resultado = "O segundo número é maior" + "</br>" + "O primeiro número é menor";
+} if (Num1 == Num2){
+    resultado = "Nenhum dos dois números é maior do que o outro"
+}
+
+document.getElementById("Num1").innerHTML= Num1;
+document.getElementById("Num2").innerHTML= Num2 + "</br>";
+document.getElementById("resultado").innerHTML= resultado;
+
+</script>
+    </center>
+</body>
+</html>

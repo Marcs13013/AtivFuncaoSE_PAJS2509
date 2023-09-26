@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow"><center>
+   <font size="9">
+<span id="Num"></span><br>
+<span id="resultado"></span>
+
+
+<br><br><br><br>
+<a href="index.html"> <button><h4>Questão 1 - Números Maiores e Menores</h4></button></a>
+<a href="Quest2.html"> <button><h4>Questão 2 - Nomes e Pesos</h4></button></a>
+<a href="Quest3.html"> <button><h4>Questão 3 - Anos de Nascimento</h4></button></a>
+<a href="Quest5.html"> <button><h4>Questão 5 - Diferença Entre Dois Números</h4></button></a>
+<a href="Quest6.html"> <button><h4>Questão 6 - Prêmio De Funcionário</h4></button></a>
+<br><a href="TesteDeMesa.html"> <button><h4>Teste De Mesa</h4></button></a>
+
+<script>
+
+let Num = Number(prompt("Digite um número aleatório para saber se ele é par ou impar"));
+let resultado = '';
+
+if (Num % 2 == 0){
+    resultado = "Seu número é par";
+}else if (Num % 2 != 0){
+    resultado = "Seu número é impar";
+}
+
+document.getElementById("Num").innerHTML = Num ;
+document.getElementById("resultado").innerHTML = resultado;
+</script>
+    </center>
+</body>
+</html>

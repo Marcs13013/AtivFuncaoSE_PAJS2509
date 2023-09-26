@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow"><center>
+   
+<font size="9">
+O valor do prêmio é: 
+<span id="ValorPremio"></span><br> O funcionário vendeu: 
+<span id="ValorVendas"></span> Reais <br>
+<span id="retorno"></span>
+
+
+</font>
+
+
+
+<br><br><br><br>
+<a href="index.html"> <button><h4>Questão 1 - Números Maiores e Menores</h4></button></a>
+<a href="Quest2.html"> <button><h4>Questão 2 - Nomes e Pesos</h4></button></a>
+<a href="Quest3.html"> <button><h4>Questão 3 - Anos de Nascimento</h4></button></a>
+<a href="Quest4.html"> <button><h4>Questão 4 - Números Pares e Impares</h4></button></a>
+<a href="Quest5.html"> <button><h4>Questão 5 - Diferença Entre Dois Números</h4></button></a>
+<br><a href="TesteDeMesa.html"> <button><h4>Teste De Mesa</h4></button></a>
+
+<script>
+
+let ValorVendas = Number(prompt("Digite o valor que esse funcionário vendeu"))
+let ValorPremio = "2500"
+let retorno = ''
+if(ValorVendas >= ValorPremio){
+retorno = "O funcionário ganhou o prêmio!!!"
+} else if (ValorVendas < ValorPremio){
+retorno = "O funcionário não ganhou o prêmio!!!"
+}
+
+document.getElementById("ValorPremio").innerHTML = ValorPremio
+document.getElementById("ValorVendas").innerHTML = ValorVendas
+document.getElementById("retorno").innerHTML = retorno
+</script>
+    </center>
+</body>
+</html>
